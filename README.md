@@ -69,3 +69,21 @@ Após clonar o repositório é necessário aplicar os arquivos de configuração
 
 ![config_postgrees](/Assets/config_postgrees.png)
 
+3 - Configuração do Token GitHub:
+
+Antes de concluir o deploy em Kubernetes, é necessário configurar um token de acesso, gerado no github
+
+![git_token](/Assets/token_git.png)
+
+O token gerado deve ser transformado para base-64 e substituido no arquivo bs-secret.yaml:
+
+![git_token_base_64](/Assets/token_base64.png)
+
+Verificando a instância em execução:
+
+![instacia_exec](/Assets/instancia_exec.png)
+
+
+### Aplicação em execução:
+
+![aplic_exec](/Assets/aplic_exec.png)
